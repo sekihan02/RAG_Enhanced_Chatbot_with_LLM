@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#chat-container {
+    flex-grow: 1;
+    overflow: auto;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+}
+
+#chat-box {
+    margin-bottom: 20px; /* フォームとの間隔 */
+    overflow-wrap: break-word; /* 長い単語でも折り返し */
+}
+
+#chatForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* フォームに影を追加 */
+    background-color: #1e1e1e;
+    border-radius: 5px;
+}
+
+#input-container {
+    display: flex;
+    width: 100%;
+}
+
+textarea {
+    width: calc(100% - 80px); /* 送信ボタンの幅を考慮 */
+    height: 72px; /* 初期の高さ */
+    resize: vertical; /* 垂直方向のリサイズのみ許可 */
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-right: 10px; /* ボタンとの間隔を調整 */
+}
+
+#sendButton {
+    width: 70px;
+    border: none; /* ボーダーを削除 */
+    background-color: #333333; /* 背景色 */
+    color: white; /* 文字色 */
+    cursor: pointer; /* カーソルをポインターに */
+    border-radius: 5px; /* 角丸のデザイン */
+}
+
+#sendButton:hover {
+    background-color: #444444;
+}
+
+#chat-box div {
+    margin: 5px 0;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #333333;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #444444;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.toggle-feature-label {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#toggleFeature {
+    margin-left: 5px;
+}
